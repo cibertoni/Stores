@@ -1,0 +1,108 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Verdana', sans-serif;
+  margin: 0;
+  padding: 0; /*tirar os espaçamentos que o navegador coloca*/
+  background-image: url(../img/bg-2.png);
+}
+
+header{
+  width: 1140px;
+}
+
+.container{
+  width: 1140px;
+  margin: 0 auto;
+}
+
+.main-nav{
+  background-color: rgb(239, 76, 39);
+  padding: 12px 15px; /*12px para cima e para baixo (top e botton) e 15px nas laterais (left e right)*/
+  overflow: hidden; /*retangulo laranja - deixa o nav calcular a latura real -> pq como todos estão flutuando se não colocar essa função ele não enxerga*/
+}
+
+.main-nav ul{
+  margin: 0;
+  padding: 0;
+  list-style: none; /*tirar as bolinhas da lista*/
+}
+
+.main-nav ul li{
+  display: inline-block; /*alinhar botões ao lado do outro*/
+}
+
+.main-nav ul li a{ /*mexer nos textos links da lista*/
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block; /*para que ele respeite o espaçamento*/
+  padding: 10px; /*alinhar o conteúdo a caixa laranja*/
+}
+
+.main-nav > a {
+  float: left;
+}
+
+.menu{
+  float: left;
+}
+
+.menu.access { /*quando vc coloca espaços entre os dois vc esta procurando o pai e filho*/
+  float: right;
+}
+
+.product-container{ /*criar fundo branca em volta do conteudo*/
+  background-color: white;
+  width: 800px;
+  float: left;
+  margin-right: 20px; /*se fosse margin geral precisava que as lateriais fossem 0 */
+  margin-top: 20px;
+  overflow: hidden; /*para que ele identifique os conteudos enquanto eles flutuam*/
+}
+
+.producto{ /*para que os produtos apareçam um ao lado do outro dentro do fundo branco*/
+  width: 380px;
+  margin: 10px;
+  float: left;
+}
+
+.producto img {/*primeiro a classe do pai e depois do filho*/
+  width: 100%;
+}
+
+.producto .more{/*primeiro a classe do pai e depois do filho*/
+  color: white;
+  background-color: rgba(255, 0, 0, 0.8); /*cor de fundo do botão */
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px 12px; /*ajusta o tamanhho da cor de fundo do botão*/
+}
+
+.left-column{
+  width: 320px;
+  float: right; /*espaçamento entre os fundos brancos*/
+}
+
+.left-column h2{ /*h2 é o filho (titulo) que esta na coluna da esquerda*/
+  padding: 15px;
+  background-color: white;
+}
+
+.left-column section{ /*a seção da coluna adireita terá um fundo branco*/
+  background-color: white;
+  margin-bottom: 30px;
+}
+
+.left-column section article{ /*mexer nos elementos internos*/
+  border-bottom: 1px solid lightblue;
+  padding: 10px;
+  overflow: hidden; /*para ajustar o retangulo branco*/
+}
+
+.left-column section article img{ /*mexer nas imagens do elemento*/
+  float: left;
+  margin-right: 10px;
+}
