@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Cadastro</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Container pai -->
+      <header>
+        <!-- Cabeçalho -->
+        <nav class="main-nav">
+          <a href="index.html"
+            ><img class="logo" src="img/logo.png" alt="logo craftsy"
+          /></a>
+          <ul class="menu">
+            <li><a href="#">Smartphones</a></li>
+            <li><a href="#">Tablets</a></li>
+            <li><a href="#">Computadores</a></li>
+          </ul>
+          <ul class="menu access">
+            <li><a href="login.html">login</a></li>
+            <li><a href="register.html">registrar</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <h1 class="titulo-centralizado">Cadastro</h1>
+        <form class="form-cadastro">
+          <label for="nome">Nome</label>
+          <input type="text" name="nome" id="nome" placeholder="Maria Silva" required>
+
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" placeholder="user@mail.com" required> <!--apagar automatico quando ele começa digitar-->
+
+          <label for="senha">Senha</label>
+          <input type="password" name="senha" id="senha" placeholder="senha segura"required>
+
+          <label for="pais">País</label>
+          <select name="pais" id="pais" required> <!--select é o dropbox-->
+            <option selected disabled>Selecione um país</option> <!-- obriga o ux a selecionar um pais-->
+            <option value="BR">Brasil</option>
+            <option value="ARG">Argentina</option>
+            <option value="EUA">Estados Unidos</option>
+          </select>
+
+<fieldset>
+  <legend>Gênero</legend>
+
+          <!-- <label for="genero">Gênero</label> <! com o fieldset / legend não é mais necessário usar esse campo, se não tivesse fieldset era essa forma correta - radio vc consegue selecionar apenas 1 opção-->
+          <label for="feminino"><input type="radio" name="genero" id="feminino" value="feminino">Feminino</label>
+          <label for="masculino"><input type="radio" name="genero" id="masculino" value="masculino">Masculino</label>
+          <label for="nao-binario"><input type="radio" name="genero" id="nao-binario" value="nao-binario">Não Binário</label>
+          <label for="n/a"><input type="radio" name="genero" id="nao-binario" value="n/a">N/A</label>
+</fieldset>
+<fieldset>
+    <legend>Hobbies</legend>
+          <!-- <label for="hobbies">Hobbies</label> <! com o fieldset / legend não é mais necessário usar esse campo, se não tivesse fieldset era essa forma correta - checkbox vc consegue selecionar mais de 1 opção-->
+          <label for="musica"><input type="checkbox" name="hobbies" id="musica" value="musica">Música</label>
+          <label for="xadrez"><input type="checkbox" name="hobbies" id="xadrez" value="xadrez">Xadrez</label>
+          <label for="drinks"><input type="checkbox" name="hobbies" id="drinks" value="drinks">Drinks</label>
+          <label for="cinema"><input type="checkbox" name="hobbies" id="cinema" value="cinema">Cinema</label>
+</fieldset>
+          <label for="comentarios">Comentários</label>
+          <textarea name="comentarios" id="comentarios" maxlength="140" required></textarea> <!-- maxlength coloca uma limitação de caracteres-->
+
+          <button type="submit" name="cadastrar">Cadastrar</button>
+    </form>
+  </body>
+</html>
