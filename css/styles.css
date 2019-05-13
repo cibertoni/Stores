@@ -106,3 +106,34 @@ header{
   float: left;
   margin-right: 10px;
 }
+
+.form-login{ /*seleciona todo o form do login*/
+  width: 400px;
+  margin: 40px auto; /*espaçamento externo, auto para as lateriais e 20 para cima e baixo*/
+}
+
+.form-login input{ /*atribuir regras para cd input do form*/
+  width: 100%;
+  margin: 0 0 10px;/*0 pra cima, 0 pras laterias e 10 pra baixo*/
+}
+
+.form-login legend{ /*centralizar tudo*/
+  text-align: center;
+  font-size: 24px; /*aumentar tamanho da letra*/
+  font-weight: bold; /*bold na letra*/
+  text-transform: uppercase;
+}
+
+.form-login fieldset{ /*colocar o espaçamento dentro do fieldset*/
+    padding: 30px 15px; /*espaçamento interno, 30 para cima e baixo e 15 para laterais */
+}
+/**/
+.form-login button{ /*chamar a classe do button*/
+  text-transform: uppercase;/*ficar mais claro (letra maiuscula) a leitura do botão*/
+  padding: 10px 20px; /* espaçamento interno de 10 pra cima e baixo e 20 lateral*/
+  background-color: rgb(239, 76, 39);
+  border: none; /*tirar a borda*/
+  color: white; /*tecto em branco*/
+  margin-top: 20px; /*espaçamento em cima*/
+  float: right; 
+}
